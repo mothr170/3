@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>母亲节快乐</title>
+    <style>
+        body {
+            font-family: "微软雅黑", sans-serif;
+            background: #fff8ea;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://via.placeholder.com/1920x1080?text=温馨背景'); /* 可替换为妈妈喜欢的图片地址 */
+        }
+        .card {
+            background: rgba(255, 235, 205, 0.9);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+        .heart {
+            color: #ff4d4d;
+            animation: beat 1.5s infinite;
+        }
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        button {
+            background: #ffb74d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: #ff8c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🎀 亲爱的妈妈 🎀</h1>
+        <p>今天是 <strong>2025年5月12日母亲节</strong>，</p >
+        <p>想对您说：<span class="heart">❤️</span></p >
+        <p style="font-size: 1.2em; color: #333;">
+            感谢您多年来的辛苦付出，<br>
+            您的爱如阳光温暖着我，<br>
+            愿时光对您温柔，<br>
+            我永远爱您！
+        </p >
+        <button onclick="showMessage()">打开爱心祝福</button>
+    </div>
+
+    <script>
+        function showMessage() {
+            alert("✨ 妈妈，母亲节快乐！\n愿您每天都有好心情，身体棒棒～\n——永远爱您的宝贝");
+        }
+    </script>
+</body>
+</html>
